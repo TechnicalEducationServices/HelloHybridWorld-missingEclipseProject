@@ -135,7 +135,7 @@ var app = {
     getContacts: function() {
     	
     	// Get ENTERPRISE Contacts
-    	$.getJSON("http://10.127.91.42:8080/ETAPP-REST-1/contacts/", function(contacts) {
+    	$.getJSON("http://10.126.87.99:8080/ETAPP-REST-1/contacts", function(contacts) {
     	    $("#enterprise_contacts_listview").empty();
     	    var items = [];
     	    var contactItem = "";
@@ -193,12 +193,12 @@ var app = {
         var contactData = JSON.stringify(contactForm);
     	
         $.ajax({
-            url: 'http://10.127.91.42:8080/ETAPP-REST-1/contacts',
+            url: 'http://10.126.87.99:8080/ETAPP-REST-1/contacts',
             contentType: 'application/json',
-            dataType: 'text', //'json',
+            dataType: 'text',
             type: 'post',
             async: 'true',
-            data:  contactData, //'{"firstName": "caca2", "lastName": "fritas"}',
+            data:  contactData,
             
             success: function(data) {
                 console.log("Contact Added");

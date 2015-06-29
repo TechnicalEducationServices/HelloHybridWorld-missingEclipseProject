@@ -12,7 +12,7 @@
     </head>
     <body>
 		
-		<!----------------------------------  Panel: Contact Details ----------------------------------------->
+		<!----------------------------------  Panel: Main Menu ----------------------------------------->
 		<div data-role="panel" id="main-menu-panel">
 		
 			<ul data-role="listview" id="listview-1">
@@ -22,44 +22,6 @@
 				<li><a href="#device_contacts_list_page" data-transition="slide">Device Contacts</a></li>
 				-->
 			</ul>
-		</div>
-		
-		<!----------------------------------  PAGE: Contact Details ----------------------------------------->
-		
-		<div data-role="page" id="contact_details_page">
-			<div data-role="header">
-				<a 	href="#enterprise_contacts_list_page"
-					id="button-1"
-					class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"
-					data-transition="slide" data-direction="reverse"></a>
-				<h1>Contact Details</h1>
-			</div>
-				<div data-role="content">
-					<div class="ui-field-contain">
-						<img id="mugshot" alt="mugshot" src="img/mugshots/55866362e4b0641b3c28940c.jpg" width="100%"/>
-						<span name="firstName" id="firstName">Rene</span>
-						<span name="lastName" id="lastName">Vogt-Lowell</span>
-					</div>
-					<div class="ui-field-contain">
-						<span name="city" id="city">Dayton</span>
-						<span name="state" id="state">Ohio</span>
-					</div>
-					<div class="ui-field-contain">
-						<span name="email" id="email">rene@vogt-lowell.com</span><br/><br/>
-						<span name="contactPhone" id="contactPhone">937.223.2332</span>
-					</div>
-					<div class="ui-grid-a app-responsive ui-field-contain">
-						<div class="ui-block-a">
-							<a href="" id="editButton" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all ui-btn-a">Edit</a>
-						</div>
-						<div class="ui-block-b">
-							<a href="" id="deleteButton" class="ui-btn ui-icon-delete ui-btn-icon-left ui-corner-all ui-btn-a">Delete</a>
-						</div>
-		            </div>
-				</div>
-			<div data-role="footer">
-				<h4>Contact Details</h4>
-			</div>
 		</div>
 		
 		<!----------------------------------  PAGE: Add Contact ----------------------------------------->
@@ -97,6 +59,44 @@
 			</form>
 			<div data-role="footer">
 				<h4>New Contact</h4>
+			</div>
+		</div>
+		
+		<!----------------------------------  PAGE: Contact Details ----------------------------------------->
+		
+		<div data-role="page" id="contact_details_page">
+			<div data-role="header">
+				<a 	href="#enterprise_contacts_list_page"
+					id="button-1"
+					class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"
+					data-transition="slide" data-direction="reverse"></a>
+				<h1>Contact Details</h1>
+			</div>
+				<div data-role="content">
+					<div class="ui-field-contain">
+						<img id="mugshot" alt="mugshot" src="img/mugshots/55915059bf963a0fcde2664e.jpg" width="100%"/>
+						<span name="firstName" id="firstName">Rene</span>
+						<span name="lastName" id="lastName">Vogt-Lowell</span>
+					</div>
+					<div class="ui-field-contain">
+						<span name="city" id="city">Dayton</span>
+						<span name="state" id="state">Ohio</span>
+					</div>
+					<div class="ui-field-contain">
+						<span name="email" id="email">rene@vogt-lowell.com</span><br/><br/>
+						<span name="contactPhone" id="contactPhone">937.555.5555</span>
+					</div>
+					<div class="ui-grid-a app-responsive ui-field-contain">
+						<div class="ui-block-a">
+							<a href="" id="editButton" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all ui-btn-a">Edit</a>
+						</div>
+						<div class="ui-block-b">
+							<a href="" id="deleteButton" class="ui-btn ui-icon-delete ui-btn-icon-left ui-corner-all ui-btn-a">Delete</a>
+						</div>
+		            </div>
+				</div>
+			<div data-role="footer">
+				<h4>Contact Details</h4>
 			</div>
 		</div>
 		
@@ -194,8 +194,8 @@
 			</div>
 		</div>
 		 -->
-		 
-        <script type="text/javascript" src="cordova.js"></script>
+		  
+         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
